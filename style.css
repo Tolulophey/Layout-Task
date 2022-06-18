@@ -13,8 +13,11 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-     background-color: rgba(75, 43, 43, 0.361);
+    background-color: rgba(75, 43, 43, 0.361);
     height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 nav{
     display: flex;
@@ -45,7 +48,7 @@ button.active{
     border: 2px solid rgb(117, 109, 109);
     cursor: default;
 }
-main {
+.flex-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,10 +58,32 @@ main {
   max-width: 500px;
   margin: auto;
 }
-main div {
+
+.grid-items{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 130px 80px 80px;
+    grid-template-areas: 
+    'a a a a a b b b'
+    'c c c c d d d d'
+    'c c c c e e e e'
+    
+    ;
+    column-gap:10px;
+    row-gap: 10px;
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 250px;
+}
+.flex-items div {
   padding: 20px;
   width: calc(100% / 3);
   height: 50%;
+}
+.grid-items > div {
+    padding: 2em;
+    text-align: center;
 }
 img{
     width: 30px;
@@ -129,4 +154,31 @@ p {
     color: white;
     border: 2px solid white;
     cursor: pointer;
+}
+.item-1{
+    background-color: #eb5020;
+    grid-area: a;
+}
+.item-2{
+    background-color: #ffa401;
+    grid-area: b;
+}
+.item-3{
+    background-color: #05aa42;
+    grid-area: c;
+}
+.item-4{
+    background-color: #01aefd;
+    grid-area: d;
+}
+.item-5{
+    background-color: rgb(84, 164, 230);
+    grid-area: e;
+}
+@media only screen and (max-width:400px){
+    .grid-items{ 
+    gap: 5px;
+    width: 90%;
+    margin: auto;
+}
 }
