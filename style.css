@@ -76,6 +76,7 @@ button.active{
 .grid{
   display: grid;
   position: fixed;
+  place-items: center;
   width: 100%;
   top: 80px;
   height: 100%;
