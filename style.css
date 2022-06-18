@@ -74,11 +74,13 @@ button.active{
 }
 
 .grid{
+  display: grid;
   position: fixed;
   width: 100%;
   top: 80px;
   height: 100%;
   background-color: #1a1c28;
+  
 }
 .grid-items{
     display: grid;
@@ -88,14 +90,10 @@ button.active{
     'a a a a a b b b'
     'c c c c d d d d'
     'c c c c e e e e'
-    
     ;
     column-gap:10px;
     row-gap: 10px;
     width: 50%;
-    margin: auto;
-    position: relative;
-    top: 200px;
 }
 .flex-items div {
   padding: 20px;
