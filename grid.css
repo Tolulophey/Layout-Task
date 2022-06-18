@@ -44,7 +44,7 @@ nav a > button{
 button:hover{
     cursor: pointer;
 }
-.active{
+button.active{
     width: 50%;
     background-color: transparent;
     color: rgb(117, 109, 109);
@@ -52,6 +52,7 @@ button:hover{
     margin-right: auto;
     box-shadow: 2px 3px 0px inset;
     border: 2px solid rgb(117, 109, 109);
+    cursor: default;
 }
 main{
     display: grid;
