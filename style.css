@@ -97,7 +97,7 @@ button.active{
     width: 50%;
 }
 .flex-items div {
-  padding: 20px;
+  padding: 30px;
   width: calc(100% / 3);
   height: 50%;
 }
@@ -121,11 +121,11 @@ h2 {
   color: hsl(0, 0%, 95%);
   text-transform: uppercase;
   font-family: "Big Shoulders Display", cursive;
-  margin: 10px;
+  margin: 10px 0;
 }
 p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin: 10px;
+  margin: 10px 0;
   font-size: 0.6em;
   font-weight: 200;
 }
